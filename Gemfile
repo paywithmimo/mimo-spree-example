@@ -25,7 +25,7 @@ gem 'jquery-rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'spree', :git => 'git://github.com/spree/spree.git', :tag => '1-2-stable'
-gem 'spree_mimo_integration', :path => '/home/uge/other/spree_mimo_integration'
+gem 'spree_mimo', :git => 'git@github.com:stackbuilders/spree_mimo.git'
 gem 'pry-rails'
 gem 'pry-nav'
 gem 'rspec-rails'

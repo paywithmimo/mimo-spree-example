@@ -57,12 +57,14 @@ GIT
       devise (~> 2.0.4)
       spree_core
 
-PATH
-  remote: ../spree_mimo_integration
+GIT
+  remote: git@github.com:stackbuilders/spree_mimo.git
+  revision: 4ce95591f0f95e8c9bd188f6f5005e352f663c1a
   specs:
-    spree_mimo_integration (0.0.1)
+    spree_mimo (0.0.1)
       oauth2
       rails (~> 3.2.8)
+      spree (~> 1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -282,7 +284,7 @@ DEPENDENCIES
   spree!
   spree_auth_devise!
   spree_last_address!
-  spree_mimo_integration!
+  spree_mimo!
   spree_promo
   sqlite3
   uglifier (>= 1.0.3)
