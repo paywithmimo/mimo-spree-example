@@ -30,7 +30,8 @@ gem 'pry-rails'
 gem 'pry-nav'
 gem 'rspec-rails'
 gem 'spree_promo'
-#gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise.git'
+gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise.git'
+gem 'spree_last_address', :git => "git://github.com/dancinglightning/spree-last-address.git"
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
