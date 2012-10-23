@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121022111118) do
+ActiveRecord::Schema.define(:version => 20121022155017) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -318,7 +318,7 @@ ActiveRecord::Schema.define(:version => 20121022111118) do
     t.integer  "shipping_category_id"
     t.datetime "created_at",                           :null => false
     t.datetime "updated_at",                           :null => false
-    t.integer  "count_on_hand",        :default => 0,  :null => false
+    t.integer  "count_on_hand",        :default => 0
   end
 
   add_index "spree_products", ["available_on"], :name => "index_spree_products_on_available_on"
@@ -475,12 +475,14 @@ ActiveRecord::Schema.define(:version => 20121022111118) do
   end
 
   create_table "spree_tax_rates", :force => true do |t|
-    t.decimal  "amount",            :precision => 8, :scale => 5
+    t.decimal  "amount",             :precision => 8, :scale => 5
     t.integer  "zone_id"
     t.integer  "tax_category_id"
-    t.datetime "created_at",                                                         :null => false
-    t.datetime "updated_at",                                                         :null => false
-    t.boolean  "included_in_price",                               :default => false
+    t.datetime "created_at",                                                          :null => false
+    t.datetime "updated_at",                                                          :null => false
+    t.boolean  "included_in_price",                                :default => false
+    t.string   "name"
+    t.boolean  "show_rate_in_label",                               :default => true
   end
 
   create_table "spree_taxonomies", :force => true do |t|
@@ -561,6 +563,7 @@ ActiveRecord::Schema.define(:version => 20121022111118) do
     t.datetime "locked_at"
     t.datetime "remember_created_at"
     t.datetime "reset_password_sent_at"
+    t.string   "spree_api_key",          :limit => 48
   end
 
   add_index "spree_users", ["email"], :name => "email_idx_unique", :unique => true
@@ -576,9 +579,10 @@ ActiveRecord::Schema.define(:version => 20121022111118) do
     t.datetime "deleted_at"
     t.boolean  "is_master",                                   :default => false
     t.integer  "product_id"
-    t.integer  "count_on_hand",                               :default => 0,     :null => false
+    t.integer  "count_on_hand",                               :default => 0
     t.decimal  "cost_price",    :precision => 8, :scale => 2
     t.integer  "position"
+    t.integer  "lock_version",                                :default => 0
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"

@@ -25,10 +25,12 @@ gem 'jquery-rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'spree', :git => 'git://github.com/spree/spree.git', :tag => '1-2-stable'
-gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise.git'
-gem "spree_social", :git => "git://github.com/spree/spree_social.git"
+gem 'spree_mimo_integration', :path => '/home/uge/other/spree_mimo_integration'
 gem 'pry-rails'
+gem 'pry-nav'
 gem 'rspec-rails'
+gem 'spree_promo'
+#gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise.git'
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
