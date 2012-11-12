@@ -19,7 +19,7 @@ set :scm,                   :git
 set :scm_verbose,           true
 set :deploy_via,            :remote_cache
 set :repository,            "git@github.com:stackbuilders/spree_mimo_example.git"
-set :branch,                "deploy"
+set :branch,                "master"
 set :runner,                user
 
 set :use_sudo,              false
