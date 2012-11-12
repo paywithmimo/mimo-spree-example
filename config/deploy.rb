@@ -30,6 +30,11 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   end
 
+  desc "Link spree folder"
+  task :link_spree_folder, :except => { :no_release => true } do
+    run "ln -s #{shared_path}/spree/ #{release_path}/public/spree"
+  end
+
   desc "Restart Apache"
   task :restart, roles:  :app, except:  { no_release:  true } do
     run "touch #{File.join(current_path,'tmp','restart.txt')}"
@@ -37,3 +42,4 @@ namespace :deploy do
 end
 
 before "deploy:assets:precompile", "deploy:symlink_configs"
+after "deploy:assets:precompile", "deploy:link_spree_folder"
