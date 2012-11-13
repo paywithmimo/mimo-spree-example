@@ -1,6 +1,6 @@
 == Filling data in Spree shop
 
-bundle exec rake db:create db:migrate spree_sample:load spree_auth:admin:create
+bundle exec rake db:create db:migrate spree_sample:load spree_auth:admin:create db:seed
 
 == Turning on MIMO auth
 
