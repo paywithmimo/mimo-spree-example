@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.9'
 
 gem 'sqlite3', group: [:development, :test]
 gem 'mysql2', '~> 0.3.11', group: [:staging, :producion]
@@ -11,6 +11,7 @@ gem 'spree_mimo', :git => 'git@github.com:paywithmimo/mimo-spree.git'
 gem 'spree_promo'
 gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise.git'
 gem 'spree_last_address', :git => "git://github.com/dancinglightning/spree-last-address.git"
+gem 'devise-encryptable'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
