@@ -4,6 +4,8 @@ require 'capistrano/ext/multistage'
 require 'bundler/capistrano'
 require 'rvm/capistrano'
 
+ssh_options[:forward_agent] = true
+
 set :normalize_asset_timestamps, false
 set :rvm_ruby_string, 'ruby-1.9.3-p125@MIMO-Spree'
 default_run_options[:pty] = true
