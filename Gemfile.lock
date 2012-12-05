@@ -59,7 +59,7 @@ GIT
 
 GIT
   remote: git@github.com:stackbuilders/spree_mimo.git
-  revision: f59fa50a35783a0a22be6fd0952758d1be62648f
+  revision: 97c92491d4e210752f1107624d7fc382782c0b63
   specs:
     spree_mimo (0.0.1)
       oauth2
