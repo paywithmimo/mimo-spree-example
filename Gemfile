@@ -21,7 +21,7 @@ end
 
 gem 'jquery-rails'
 gem 'spree', :git => 'git://github.com/spree/spree.git', :tag => '1-2-stable'
-gem 'spree_mimo', :git => 'git@github.com:stackbuilders/spree_mimo.git'
+gem 'spree_mimo', :git => 'git@github.com:paywithmimo/mimo-spree.git'
 gem 'spree_promo'
 gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise.git'
 gem 'spree_last_address', :git => "git://github.com/dancinglightning/spree-last-address.git"
