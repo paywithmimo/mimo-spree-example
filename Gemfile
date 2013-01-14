@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.11'
 
 gem 'sqlite3', group: [:development, :test]
 gem 'mysql2', '~> 0.3.11', group: [:staging, :producion]
