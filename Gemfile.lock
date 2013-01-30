@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/dancinglightning/spree-last-address.git
-  revision: 7c01ca9d89a785e8d9b4dbcbf8406eb238884ee1
-  specs:
-    spree_last_address (1.1.0)
-      spree_core (>= 1.1)
-
-GIT
   remote: git://github.com/spree/spree.git
   revision: ce5bc8812903d50dcc6056147f376825faa68ed2
   tag: 1-2-stable
@@ -298,7 +291,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   spree!
   spree_auth_devise!
-  spree_last_address!
   spree_mimo!
   spree_promo
   sqlite3
