@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '~> 3.2.12'
 
 gem 'sqlite3', group: [:development, :test]
 gem 'mysql2', '~> 0.3.11', group: [:staging, :producion]
 
 gem 'jquery-rails'
-gem 'spree', :git => 'git://github.com/spree/spree.git', :tag => '1-2-stable'
+gem 'spree', '~> 1.2.0'
 gem 'spree_mimo', :git => 'git@github.com:paywithmimo/mimo-spree.git'
 gem 'spree_promo'
-gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise.git'
+gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise.git', :tag => '1-2-stable'
 gem 'devise-encryptable'
 
 group :assets do
@@ -26,4 +26,7 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'factory_girl_rails', '~> 1.7.0'
+  gem 'ffaker'
+  gem 'capybara-webkit', '~> 0.12.0'
 end
