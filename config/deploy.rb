@@ -7,7 +7,7 @@ require 'rvm/capistrano'
 ssh_options[:forward_agent] = true
 
 set :normalize_asset_timestamps, false
-set :rvm_ruby_string, 'ruby-1.9.3-p125@MIMO-Spree'
+set :rvm_ruby_string, 'ruby-1.9.3-p125@MIMO-Spree-Example'
 default_run_options[:pty] = true
 
 set :keep_releases,         5
