@@ -2,8 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 3.2.12'
 
-gem 'sqlite3', group: [:development, :test]
-gem 'mysql2', '~> 0.3.11', group: [:staging, :producion]
+gem 'pg', '~> 0.14.1'
 
 gem 'jquery-rails'
 gem 'spree', '~> 1.2.0'

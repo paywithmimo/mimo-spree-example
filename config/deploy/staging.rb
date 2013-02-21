@@ -1,5 +1,5 @@
 set :rails_env,             "staging"
-set :domain,                "spree-example.mimo.com.ng"
+set :domain,                "staging.mimo.com.ng"
 
 role :web,                  domain.to_s
 role :app,                  domain.to_s
