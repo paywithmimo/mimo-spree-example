@@ -34,4 +34,7 @@ SpreeMimo::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # This line is used by mimo-spree gem
+  config.mimo_url = 'https://sandbox.mimo.com.ng'
 end
