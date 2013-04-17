@@ -34,4 +34,7 @@ SpreeMimo::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # This line is used by mimo-spree gem
+  config.mimo_url = 'https://sandbox.mimo.com.ng'
 end

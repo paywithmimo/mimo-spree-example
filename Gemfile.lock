@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: git@github.com:paywithmimo/mimo-spree.git
-  revision: 774303e0891b7e312faf14f4d6df13e774cd36a4
+  revision: 8f40ec7cdf3a05db9edc36c06fc53f4072fde478
   specs:
     spree_mimo (0.0.1)
       oauth2
